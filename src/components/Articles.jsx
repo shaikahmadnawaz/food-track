@@ -5,13 +5,13 @@ import {
   Heading,
   Flex,
   Grid,
-  Link as ChakraLink,
   Button,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 
 const TrendingCards = (props) => {
+  // eslint-disable-next-line react/prop-types
   const { picture, title, summary } = props;
   return (
     <Box flex="1" border="1px solid #E2E8F0" borderRadius="lg" p="1rem">
