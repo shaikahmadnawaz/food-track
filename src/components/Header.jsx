@@ -8,6 +8,7 @@ const Header = () => {
         justify="space-between"
         paddingLeft={{ base: "2", sm: "4", md: "8", lg: "24" }}
         position="relative"
+        paddingBottom={28}
       >
         <Box
           flex="1"
