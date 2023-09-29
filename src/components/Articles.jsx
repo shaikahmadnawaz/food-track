@@ -14,7 +14,13 @@ const TrendingCards = (props) => {
   // eslint-disable-next-line react/prop-types
   const { picture, title, summary } = props;
   return (
-    <Box flex="1" border="1px solid #E2E8F0" borderRadius="lg" p="1rem">
+    <Box
+      flex="1"
+      border="1px solid #E2E8F0"
+      borderRadius="lg"
+      p="1rem"
+      mb="2rem"
+    >
       <Box position="relative">
         <Image
           borderTopRightRadius="10px"
@@ -110,10 +116,25 @@ const Articles = () => {
   };
 
   return (
-    <Box mb={["5rem", "7rem", "8rem", "10rem"]} as="section" mt="0">
-      <Box maxW="1200px" mx="auto" paddingTop="0">
-        <Flex justify="space-between" align="center" mb="2.4rem">
-          <Heading fontSize={["2xl", "3xl"]} color="#0E2368">
+    <Box
+      mb="5rem"
+      as="section"
+      mt="5rem"
+      textAlign={{ base: "center", md: "left" }}
+    >
+      <Box maxW="1200px" mx="auto" paddingX={["4", "6"]} paddingTop="4">
+        {" "}
+        <Flex
+          justify={{ base: "center", md: "space-between" }}
+          align="center"
+          mb="2rem"
+        >
+          <Heading
+            fontSize={["xl", "2xl"]}
+            color="#0E2368"
+            textAlign={{ base: "center", md: "left" }}
+          >
+            {" "}
             Latest Articles
           </Heading>
         </Flex>

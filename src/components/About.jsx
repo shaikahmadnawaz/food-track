@@ -3,7 +3,7 @@ import { Box, Text, Image, Heading, Flex, Button } from "@chakra-ui/react";
 const About = () => {
   return (
     <Box
-      mb={["3rem", "5rem", "7rem", "10rem"]}
+      paddingY={{ base: "6rem" }}
       as="section"
       bgGradient="linear(to-r, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%)"
       paddingX="12"
@@ -11,12 +11,18 @@ const About = () => {
       <Flex
         flexDir={{ base: "column", md: "row" }}
         align="center"
-        justify="space-between"
+        justify={{ base: "center", md: "space-between" }}
         maxW="1200px"
         mx="auto"
+        textAlign={{ base: "center", md: "left" }}
       >
         <Box>
-          <Image width={384} height={468} src="about.png" />
+          <Image
+            width={384}
+            height={468}
+            src="about.png"
+            display={{ base: "none", md: "block" }}
+          />
         </Box>
         <Box flexBasis="40%">
           <Heading mb="1.5rem" size="xl" as="h2" color="#0E2368">

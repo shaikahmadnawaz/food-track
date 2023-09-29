@@ -44,8 +44,18 @@ const Footer = () => {
       >
         <Box flex="1.3" textAlign="center" color="#646874">
           <Box width="75%" mx="auto">
-            <ChakraLink href="#!">
-              <Image mb="1.5rem" src="./logo-f.png" alt="Logo" />
+            <ChakraLink
+              href="#!"
+              display="flex"
+              justifyContent="center"
+              mb={{ base: "1rem", md: "1.5rem" }}
+            >
+              <Image
+                src="./logo-f.png"
+                width={{ base: "75px", md: "161px" }}
+                height={{ base: "58px", md: "125px" }}
+                alt="Logo"
+              />
             </ChakraLink>
           </Box>
         </Box>
@@ -79,16 +89,32 @@ const Footer = () => {
           </Stack>
         </Box>
 
-        <Box flex="0.7" textAlign="left" color="#646874">
-          <Text mb="1.5rem" fontWeight="bold" color="#0E2368">
+        <Box
+          flex="0.7"
+          textAlign={{ base: "center", md: "left" }}
+          color="#646874"
+        >
+          <Text
+            mb={{ base: "1rem", md: "1.5rem" }}
+            fontWeight="bold"
+            color="#0E2368"
+          >
             Social Links
           </Text>
-          <Stack direction="row" spacing="1rem" align="center">
+          <Stack
+            direction={{ md: "row" }}
+            textAlign={{ base: "center", md: "left" }}
+            spacing="1rem"
+            align="center"
+            justify={{ base: "center", md: "flex-start" }}
+          >
             <FaFacebook size={20} color="#0E2368" />
             <FaTwitter size={20} color="#0E2368" />
             <FaInstagram size={20} color="#0E2368" />
           </Stack>
-          <Text mt="7rem">© 2022 Food Truck Example</Text>
+          <Text mt={{ base: "3rem", md: "7rem" }}>
+            © 2022 Food Truck Example
+          </Text>
         </Box>
       </Flex>
     </Box>
